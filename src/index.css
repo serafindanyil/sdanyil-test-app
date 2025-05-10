@@ -51,11 +51,19 @@
 	color: black;
 	background-color: #ffffff;
 
+	overflow: hidden;
+
+
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE/Edge */
+	::-webkit-scrollbar {
+		display: none; /* Chrome, Safari */
+	}
 	--accent-color: #4ea524;
 	--primary-color: #212121;
 	--secondary-color: #757575;
@@ -77,8 +85,17 @@ body {
 	min-height: 100vh;
 }
 
-.mb-1_9 {
-	margin-bottom: 1.9rem;
+
+.mb-_5 {
+	margin-bottom: 0.5rem;
+}
+
+.mb-2_8 {
+	margin-bottom: 2.8rem;
+}
+
+.mt-1_4 {
+	margin-top: 1.4rem;
 }
 
 .align-button__bottom {
@@ -91,6 +108,38 @@ body {
 
 .relative {
 	position: relative;
+}
+
+
+.padding-mobile {
+	padding: 0 1.6rem;
+}
+
+.overflow-y {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	height: calc(100vh - 20.6rem); /* 100vh - 15rem - 4rem - 1.6rem */
+	overflow-x: auto;
+}
+
+button {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-focus-ring-color: transparent;
+	outline: none;
+}
+
+button:focus,
+button:active {
+	outline: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:focus-visible {
+	outline: none;
 }
 
 @media (prefers-color-scheme: light) {
