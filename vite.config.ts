@@ -44,7 +44,7 @@ export default defineConfig({
 				],
 			},
 			manifest: manifest,
-			base: "/sdanyil-test-app",
+			base: "/sdanyil-test-app/",
 		}),
 	],
 });
