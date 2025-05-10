@@ -51,6 +51,7 @@ const Card = ({ isActive = true, className }: CardProps) => {
 					<span className={classes.title}>Квиток разового використання</span>
 					{isActive && <span className={classes.time}>59:50</span>}
 				</div>
+
 			</div>
 		</div>
 	);

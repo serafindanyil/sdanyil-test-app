@@ -2,7 +2,6 @@
 	display: flex;
 	box-sizing: border-box;
 	width: 100%;
-
 	padding: 1.6rem;
 	flex-direction: column;
 	align-items: center;
@@ -12,7 +11,6 @@
 	border-radius: 0.8rem;
 	background: white;
 	box-shadow: var(--card-shadow);
-
 	&__disabled {
 		filter: grayscale(100%);
 	}
@@ -110,6 +108,7 @@
 		font-weight: 510;
 		letter-spacing: 0.014rem;
 	}
+
 }
 
 .tram_number {

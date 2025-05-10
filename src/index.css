@@ -50,7 +50,9 @@
 	color-scheme: light dark;
 	color: black;
 	background-color: #ffffff;
+
 	overflow: hidden;
+
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -62,7 +64,6 @@
 	::-webkit-scrollbar {
 		display: none; /* Chrome, Safari */
 	}
-
 	--accent-color: #4ea524;
 	--primary-color: #212121;
 	--secondary-color: #757575;
@@ -83,6 +84,7 @@ body {
 	min-width: 320px;
 	min-height: 100vh;
 }
+
 
 .mb-_5 {
 	margin-bottom: 0.5rem;
@@ -107,6 +109,7 @@ body {
 .relative {
 	position: relative;
 }
+
 
 .padding-mobile {
 	padding: 0 1.6rem;

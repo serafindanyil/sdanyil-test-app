@@ -6,6 +6,7 @@ type HeaderProps = {
 	className?: string;
 };
 
+
 const Header = ({ currentPage, className }: HeaderProps) => {
 	return (
 		<div className={`${classes.header} ${className}`}>
