@@ -4,7 +4,7 @@
 	"start_url": "/sdanyil-test-app/",
 	"display": "standalone",
 	"background_color": "#ffffff",
-	"theme_color": "#4ea524",
+	"theme_color": "#ffffff",
 	"lang": "uk-UA",
 	"scope": "/sdanyil-test-app/",
 	"icons": [
