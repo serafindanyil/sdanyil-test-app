@@ -1,0 +1,46 @@
+.switch {
+	display: flex;
+	width: 100%;
+	padding: 0.2rem;
+	border-radius: 5rem;
+	align-items: center;
+	gap: 0.4rem;
+	background-color: var(--tertiary-color);
+	position: relative;
+}
+
+.button {
+	all: unset;
+	transition: all 0.3s;
+	display: flex;
+	height: 3.4rem;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3rem;
+	font-style: normal;
+	font-weight: 590;
+	line-height: 100%;
+	letter-spacing: 0.039rem;
+	z-index: 1;
+	cursor: pointer;
+
+	&__active {
+		@extend .button;
+		color: var(--accent-color);
+	}
+}
+
+.indicator {
+	transition: all 0.3s;
+	height: 3.4rem;
+	width: calc(50% - 0.4rem);
+	border-radius: 5.2rem;
+	position: absolute;
+	background-color: white;
+	left: 0.2rem;
+}
+
+.second {
+	left: calc(50% + 0.2rem);
+}

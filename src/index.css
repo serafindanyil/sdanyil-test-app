@@ -1,0 +1,107 @@
+/* --- SF Pro  --- */
+
+@font-face {
+	font-family: "SF Pro";
+	src: url("fonts/San Francisco Pro/SFProText-Bold.ttf") format("truetype");
+	font-weight: 700; /* або 700 */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SF Pro";
+	src: url("fonts/San Francisco Pro/SFProText-Heavy.ttf") format("truetype");
+	font-weight: 860; /* Heavy, або 800 в залежності від точного накреслення */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SF Pro";
+	src: url("fonts/San Francisco Pro/SFProText-Light.ttf") format("truetype");
+	font-weight: 274; /* Light */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SF Pro";
+	src: url("fonts/San Francisco Pro/SFProText-Medium.ttf") format("truetype");
+	font-weight: 510; /* Medium */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SF Pro";
+	src: url("fonts/San Francisco Pro/SFProText-Regular.ttf") format("truetype");
+	font-weight: 400; /* або 400 */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SF Pro";
+	src: url("fonts/San Francisco Pro/SFProText-Semibold.ttf") format("truetype");
+	font-weight: 590; /* Semibold */
+	font-style: normal;
+}
+
+:root {
+	font-family: "SF Pro", sans-serif;
+	line-height: 100%;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: black;
+	background-color: #ffffff;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	--accent-color: #4ea524;
+	--primary-color: #212121;
+	--secondary-color: #757575;
+	--tertiary-color: #ebebeb;
+
+	--card-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+	--button-piece-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+	--icon-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+.mb-1_9 {
+	margin-bottom: 1.9rem;
+}
+
+.align-button__bottom {
+	position: absolute;
+	bottom: 5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 2rem);
+}
+
+.relative {
+	position: relative;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color: #213547;
+		background-color: #ffffff;
+	}
+	a:hover {
+		color: #747bff;
+	}
+	button {
+		background-color: #f9f9f9;
+	}
+}

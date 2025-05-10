@@ -1,0 +1,1 @@
+{"name":"ticket","short_name":"ticket","start_url":"/","display":"standalone","background_color":"#ffffff","theme_color":"#4ea524","lang":"uk-UA","scope":"/","icons":[{"purpose":"maskable","sizes":"512x512","src":"icon512_maskable.png","type":"image/png"},{"purpose":"any","sizes":"512x512","src":"icon512_rounded.png","type":"image/png"}],"orientation":"portrait"}
