@@ -4,7 +4,7 @@ import svgr from "vite-plugin-svgr";
 import { type ManifestOptions, VitePWA } from "vite-plugin-pwa";
 
 const manifest: Partial<ManifestOptions> | false = {
-	theme_color: "#4ea524",
+	theme_color: "#fff",
 	background_color: "#ffffff",
 	icons: [
 		{
