@@ -22,7 +22,10 @@
 		"erasableSyntaxOnly": true,
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedSideEffectImports": true,
-		"types": ["vite-plugin-pwa/client"]
+		"types": ["vite-plugin-pwa/client"],
+		"paths": {
+			"~/*": ["./src/*"]
+		}
 	},
 	"include": ["src"]
 }

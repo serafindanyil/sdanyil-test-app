@@ -2,8 +2,13 @@ import Header from "../components/Header/Header";
 import Switch from "../components/Switch/Switch";
 import Card from "../components/Card/Card";
 import Button from "../components/Button/Button";
+import { useSelector } from "react-redux";
+import type { RootState } from "~/store/store.ts";
+import type { TCard } from "~/types/Card";
 
 const TicketPage = () => {
+	const items = useSelector((state: RootState) => state.card.items as TCard[]);
+
 	return (
 		<>
 			<div className="padding-mobile">
@@ -17,8 +22,13 @@ const TicketPage = () => {
 				/>
 			</div>
 			<article className="overflow-y">
-				<Card className="padding-mobile mt-1_4" />
-				<Card isActive={false} className="padding-mobile mb-2_8 " />
+				{items.map((card, index) => (
+					<Card
+						{...card}
+						key={index}
+						className="padding-mobile mb-2_8 mt-1_4"
+					/>
+				))}
 			</article>
 			<Button className="align-button__bottom">Відсканувати QR-код</Button>
 		</>
