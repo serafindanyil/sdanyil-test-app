@@ -27,7 +27,6 @@ const manifest: Partial<ManifestOptions> | false = {
 	short_name: "ticket",
 };
 
-// https://vite.dev/config/
 export default defineConfig({
 	plugins: [
 		react(),
@@ -47,4 +46,9 @@ export default defineConfig({
 		}),
 	],
 	base: "/sdanyil-test-app/",
+	resolve: {
+		alias: {
+			"~": "/src",
+		},
+	},
 });

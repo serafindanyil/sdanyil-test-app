@@ -1,13 +1,17 @@
 import classes from "./Card.module.scss";
 import LvivLogo from "../../assets/lviv-logo.svg?react";
 import TicketLogo from "../../assets/ticket-logo.svg?react";
+import type { TCard } from "~/types/Card";
 
-interface CardProps {
-	isActive?: boolean;
-	className?: string;
-}
-
-const Card = ({ isActive = true, className }: CardProps) => {
+const Card = ({
+	serialNumber,
+	vagonNumber,
+	date,
+	time,
+	passagers,
+	isActive,
+	className,
+}: TCard) => {
 	return (
 		<div className={className}>
 			<div
@@ -22,7 +26,7 @@ const Card = ({ isActive = true, className }: CardProps) => {
 						<span className={classes.lviv__title}>Львів</span>
 						<span className={classes.lvivavto__title}>ЛЬВІВЕЛЕКТРОТРАНС</span>
 						<span className={classes.seriya__title}>
-							Серія <b className={classes.seriya__bold}>23821503</b>
+							Серія <b className={classes.seriya__bold}>{serialNumber}</b>
 						</span>
 					</div>
 				</div>
@@ -31,27 +35,26 @@ const Card = ({ isActive = true, className }: CardProps) => {
 				</div>
 				<div className={classes.descripton}>
 					<div className={classes.wrapper__vagon}>
-						<span className={classes.tram_number}>№1178</span>
+						<span className={classes.tram_number}>{`№${vagonNumber}`}</span>
 						<span className={classes.label__vagon}>Вагон</span>
 					</div>
 					<div className={classes.wrapper__description}>
 						<div className={classes.wrapper__block}>
 							<span className={classes.label}>Дата</span>
-							<span className={classes.text}>08.05.2025</span>
+							<span className={classes.text}>{date}</span>
 						</div>
 						<div className={classes.wrapper__block}>
 							<span className={classes.label}>Час</span>
-							<span className={classes.text}>14:19:43</span>
+							<span className={classes.text}>{time}</span>
 						</div>
 						<div className={classes.wrapper__block}>
 							<span className={classes.label}>Пасажири</span>
-							<span className={classes.text}>1</span>
+							<span className={classes.text}>{passagers}</span>
 						</div>
 					</div>
 					<span className={classes.title}>Квиток разового використання</span>
 					{isActive && <span className={classes.time}>59:50</span>}
 				</div>
-
 			</div>
 		</div>
 	);

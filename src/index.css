@@ -52,7 +52,7 @@
 	background-color: #ffffff;
 
 	overflow: hidden;
-
+	user-select: none;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -85,7 +85,6 @@ body {
 	min-height: 100vh;
 }
 
-
 .mb-_5 {
 	margin-bottom: 0.5rem;
 }
@@ -109,7 +108,6 @@ body {
 .relative {
 	position: relative;
 }
-
 
 .padding-mobile {
 	padding: 0 1.6rem;

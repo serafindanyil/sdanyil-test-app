@@ -7,7 +7,18 @@
 .icon {
 	position: absolute;
 	bottom: -4px;
-	left: 0;
+
+	&__left {
+		@extend .icon;
+		left: 0;
+		stroke: var(--primary-color);
+	}
+
+	&__right {
+		@extend .icon;
+		right: 0;
+		stroke: white;
+	}
 }
 
 .title {
